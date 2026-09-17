@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeon Exchange</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div>
+        <h1 class="aeon">Aeon Exchange</h1>
+        <span class="welcome">Welcome to Aeon Exchange</span>
+        
+        <div class="currency-container">
+            <h1>
+            <input class="currency" id="currency-input" type="number" placeholder="Enter amount ..."></h1>
+                <select id="currency-select">
+                <option value="USD">USD ($)</option>
+                <option value="EUR">EUR (€)</option>
+                <option value="GBP">GBP (£)</option>
+                <option value="AUD">AUD ($)</option>
+                <option value="CAD">CAD ($)</option>
+            
+            </select>
+
+            <button class="btn" id="btn" type="submit">Convert</button>
+        </div>
+
+        <div class="result-container">
+            
+            <div class="result"><span id="result"></span></div>
+        </div>
+
+    </div>
+    
+    <script src="./app.js"></script>  
+</body>
+</html>
