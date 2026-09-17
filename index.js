@@ -24,7 +24,7 @@ app.get('/api/:currency/:amount', async (req, res) => {
   console.log(currency);
   const options = {method: 'GET'};
 
-  const API_KEY = '58f971b4c9a043698323ad8ba3687f0c';
+  const API_KEY = process.env.ABSTRACT_API_KEY || '58f971b4c9a043698323ad8ba3687f0c';
   const url = `https://exchange-rates.abstractapi.com/v1/live?api_key=${API_KEY}&base=${currency.toUpperCase()}&target=EUR,AUD,GBP,CAD,JPY,CHF,INR,CNY,SGD`;
 
   const response = await fetch(url, {method: 'GET'});
