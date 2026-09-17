@@ -16,7 +16,7 @@ async function handleclick() {
         return;
     }
 
-    const url = `http://localhost:3000/api/${basecurrency}/${amount}`;
+    const url = `/api/${basecurrency}/${amount}`;
     try {
     const response = await fetch(url, { method: 'GET' });
     if (!response.ok) {
